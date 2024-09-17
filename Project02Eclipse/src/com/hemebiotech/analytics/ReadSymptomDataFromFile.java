@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
-	private String filepath;
+	final String filepath;
 
 	public ReadSymptomDataFromFile (String filepath) {
 		this.filepath = filepath;
