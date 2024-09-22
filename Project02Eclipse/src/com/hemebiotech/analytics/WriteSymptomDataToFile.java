@@ -12,7 +12,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
         this.filepath = filepath;
     }
     @Override
-    public void writeSymptoms(Map<String, Integer> symptoms) throws IOException {
+    public void writeSymptoms(Map<String, Integer> symptoms){
 
         try (FileWriter writer = new FileWriter(filepath)) {
 
@@ -26,8 +26,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
 
 
         } catch (IOException e) {
-            e.printStackTrace();
-            throw e;
+            System.out.println("Une erreur s'est produite lors de l'écriture du fichier : " + e.getMessage());
         }
     }
 }
