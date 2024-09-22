@@ -1,6 +1,5 @@
 package com.hemebiotech.analytics;
 
-import javax.swing.plaf.synth.SynthSliderUI;
 import java.io.IOException;
 import java.util.*;
 
@@ -10,7 +9,7 @@ public class AnalyticsCounter {
 	final ISymptomWriter writer;
 
 
-	public AnalyticsCounter(ISymptomReader reader, ISymptomWriter writer) throws IOException {
+	public AnalyticsCounter(ISymptomReader reader, ISymptomWriter writer){
 		this.reader = reader;
 		this.writer = writer;
 	}
