@@ -13,8 +13,6 @@ public class Main {
         List<String> symptoms = counter.getSymptoms();
         Map<String, Integer> countedSymptoms = counter.countSymptoms(symptoms);
         Map<String, Integer> sortSymptoms = counter.sortSymptoms(countedSymptoms);
-       /* List<String> filterList = Arrays.asList("headache", "dialated pupils", "rash");
-        Map<String, Integer> filteredSymptoms = counter.filteredSymptoms(sortSymptoms, filterList);*/
         counter.writeSymptoms(sortSymptoms);
     }
 }
