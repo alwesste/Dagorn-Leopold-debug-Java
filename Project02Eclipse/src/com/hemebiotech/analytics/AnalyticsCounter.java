@@ -38,16 +38,4 @@ public class AnalyticsCounter {
 		}
 	}
 
-//	public Map<String, Integer>	 filteredSymptoms(Map<String, Integer> symptoms, List<String> filteredList) {
-//		Map<String, Integer> filteredSymptoms = new HashMap<>();
-//		for (String symptom : filteredList) {
-//			if (symptoms.containsKey(symptom)) {
-//				filteredSymptoms.put(symptom, symptoms.get(symptom));
-//			}
-//		}
-//		return filteredSymptoms;
-//	}
-
-
-
 }
