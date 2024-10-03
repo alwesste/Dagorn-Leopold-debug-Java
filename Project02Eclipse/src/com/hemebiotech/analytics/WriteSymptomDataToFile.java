@@ -8,11 +8,17 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
 
     final String filepath;
 
-    public WriteSymptomDataToFile (String filepath) {
+    public WriteSymptomDataToFile(String filepath) {
         this.filepath = filepath;
     }
+
+    /**
+     * Ecrit les symptômes dans un fichier spécifique vers un chemin donnée.
+     *
+     * @param symptoms une map où la clé est le nom des symptômes et avec comme valeur le nombre d'occurence par symptôme.
+     */
     @Override
-    public void writeSymptoms(Map<String, Integer> symptoms){
+    public void writeSymptoms(Map<String, Integer> symptoms) {
 
         try (FileWriter writer = new FileWriter(filepath)) {
 
